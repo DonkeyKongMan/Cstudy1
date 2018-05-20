@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    char a[8],b[8];
+    int c,d;
+    printf("文字列入力1：");
+    gets(a);
+    printf("\n文字列入力2：");
+    gets(b);
+    printf("\n数値を入力1：");
+    scanf("%d",&c);
+    printf("\n数値を入力2：\n");
+    scanf("%d",&d);
+    printf("入力された文字列は%sと%sです\n",a,b);
+    printf("入力された数値は%dと%dです\n",c,d);
+    return 0;
+}
