@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int chrtyp(int ch){
+    int s;
+	if(ch >= 65 && ch <= 90){
+		s = 'A';    /* ch = 'A'; */
+	}
+	else if(ch >= 97 && ch <= 122){
+		s = 'a';    /* ch = 'a'; */
+	}
+	else if(ch >= 48 && ch <= 57){
+		s = '0';    /* ch = '0'; */
+	}
+	else{
+		s = '-';
+	}
+	return s;
+}
+
+int main()
+{
+	int a = 'B';
+    int b = 'd';
+    int c = 7;
+	int x;
+	x = chrtyp(a);
+	printf("a判定結果：%s\n",x);;
+	x = chrtyp(b);
+	printf("b判定結果：%s\n",x);;
+	x = chrtyp(c);
+	printf("c判定結果：%s\n",x);
+	return 0;
+}
